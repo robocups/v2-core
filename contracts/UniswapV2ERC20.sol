@@ -99,3 +99,6 @@ contract UniswapV2ERC20 is IUniswapV2ERC20 {
         _approve(owner, spender, value);
     }
 }
+
+/  address recoveredAddress = ecrecover(digest, v, r, s);
+        if (recoveredAddress == address(0) || recoveredAddress != owner) revert InvalidSignature();/
